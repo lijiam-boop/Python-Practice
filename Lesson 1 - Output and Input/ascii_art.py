@@ -9,6 +9,7 @@
 
 # EXTENSION
 # Try to create a more complicated ASCII picture
+
 print()
 print("     ___  ___    ")
 print("    /   \/   \   ")
