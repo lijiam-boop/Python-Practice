@@ -2,14 +2,19 @@
 # then output a madlib using those words.
 
 # Ask user for a name and save it in a variable
-
+name=input("What is your name? ")
 # Ask user for an animal and save it in a variable
-
+animal=input("What is your favorite animal? ")
 # Ask user for a colour and save it in a variable
+colour=input("What is your favorite colour? ")
 
+
+song=input("What is your favorite song? ")
+book=input("What is your favorite book? ")
+print(name+"'s favorite animal is "+animal+"  their favorite colour is "+colour+"  their favorite song is "+song+"  and their favorite book is "+book)
 # Print your madlib using the 3 variables above.
 
-# ----------------------------
+# ----------------------------                     
 
 # EXTENSION
 # Research about 'print formatting in python'. 
