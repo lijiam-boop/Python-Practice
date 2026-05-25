@@ -12,11 +12,30 @@ print("  VVV")
 # q5= input("4. What do most birds use to fly? ")
 # print("Thanks for taking the quiz! I hope you enjoyed it!")
 
-q1 = input("Do you believe the Earth is round? ")
-if q1 == "Yes":
-    print("Correct! The Earth is round.")
-elif q1 == "No":
-    print("Incorrect. The Earth is round.")
-
+#q1 = input("Do you believe the Earth is round? A. Yes B. No C. Not sure ")
+#if q1 == "Yes":
+ #   print("Correct! The Earth is round.")
+#elif q1 == "yes":
+  #  print("Correct! The Earth is round.")
+#elif q1 == "A":
+ #   print("Correct! The Earth is round.")
+#elif q1 == "B":
+  #  print("Incorrect! The Earth is round.")
+#else:
+    #print("Incorrect. The Earth is round.")
+    
+q2 = input("What is the largest planet in our solar system? A. Earth B. Jupiter C. Mars ")
+if q2 == "B":
+    print("Correct! Jupiter is the largest planet in our solar system.")
+elif q2 == "b":
+    print("Correct! Jupiter is the largest planet in our solar system.")
+elif q2 == "Jupiter":
+    print("Correct! Jupiter is the largest planet in our solar system.")
+elif q2 == "jupiter":
+    print("Correct! Jupiter is the largest planet in our solar system.")
+elif q2 == "A":
+    print("Incorrect! The correct answer is Jupiter.")
+elif q2 == "C":
+    print("Incorrect! The correct answer is Jupiter.")
 else:
-    print("Incorrect.Please try again")
+    print("Incorrect! The correct answer is Jupiter.")
