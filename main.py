@@ -28,8 +28,10 @@
 #    print('hello')
 # if 5 < 10:
 #    pass
-if 10 != 9:
-   print('hello')
-print('goodbye')
-
+guess = input("What’s the password?")
+print('Checking password is a match…')
+while guess != 'secret':
+     guess = input('Try again')
+     print('Checking password is a match…')
+input('Welcome!')
 
