@@ -6,7 +6,6 @@
 # TODO: Create a variable to store the correct country (e.g., "Italy").
 correct_country = "Canada"
 # TODO: Create a variable to keep track of the user's current guess. 
-guess = ""
 #       (Hint: Start it as an empty string "" so the loop runs at least once!)
 
 
@@ -14,11 +13,11 @@ guess = ""
 # TODO: Start a 'while' loop. 
 #       The loop should keep running AS LONG AS the user's guess 
 #       is NOT EQUAL to the correct country.
-
+while guess != country:
     
     # TODO: Ask the user for their guess and save it to your guess variable.
     #       (Remember: This changes the loop condition so it doesn't run forever!)
-    
+    guess = input("What country am I think of?")
     # TODO: (Optional) Add an 'if' statement inside the loop.
     #       If they guessed wrong, print an encouraging message or an extra hint.
     #       If they guessed right, the loop will automatically exit on the next check!
