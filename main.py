@@ -28,17 +28,22 @@
 #    print('hello')
 # if 5 < 10:
 #    pass
-guess = input("What’s the password?")
-print('Checking password is a match…')
-while guess != 'secret':
-     guess = input('Try again')
-     print('Checking password is a match…')
-input('Welcome!')
-guess = input('What’s the password?')
-print('Checking password is a match…')
-while guess != 'secret':
- guess = input('Try again')
-print('Checking password is a match…')
-input('Welcome!')
 
+# guess = input("What’s the password?")
+# print('Checking password is a match…')
+# while guess != 'secret':
+     # guess = input('Try again')
+     # print('Checking password is a match…')
+# input('Welcome!')
+# guess = input('What’s the password?')
+# print('Checking password is a match…')
+# while guess != 'secret':
+#  guess = input('Try again')
+# print('Checking password is a match…')
+# input('Welcome!')
+
+score = 0
+while score < 10:
+    print("Keep playing!")
+    # Missing counter update
 
