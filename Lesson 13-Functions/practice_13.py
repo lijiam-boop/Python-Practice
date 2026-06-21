@@ -16,14 +16,16 @@ This program helps to calculate the area and circumference of a rectangle
 def calculate_area():
     length = int(input("What is the length?"))
     width = int(input("What is the width?"))
-    print(f"The area is {length * width }².")
+    area = length * width
+    print(f"The area is {area}.")
 
 
 # TODO ------->>>> Write a function here for calculating the circumference after getting length and width from user
 def calculate_circumference():
     length = int(input("What is the length?"))
     width = int(input("What is the width?"))
-    print(f"The circumference(perimeter) is {2 * (length + width)}.")
+    perimeter = 2 * (length + width)
+    print(f"The circumference(perimeter) is {perimeter}.")
 # Run the main program
 def main():
 
@@ -32,17 +34,18 @@ def main():
     print("2. Circumference Calculator")
     choice = input("\nWhich tool do you want to use? (1 or 2): ").strip()
 
-    # Trigger function based on user choice
+# Trigger function based on user choice
     def calculate_area():
-          length = input("What is the length?")
-          width = input("What is the width?")
-          print(f"The area is {length * width }.")   
-        # TODO ------->>>> Call the function for calculating area here
+        length = int(input("What is the length?"))
+        width = int(input("What is the width?"))
+        area = length * width
+        print(f"The area is {area}.")
+# TODO ------->>>> Call the function for calculating area here
     def calculate_circumference():
-         length = input("What is the length?")
-         width = input("What is the width?")
-         print(f"The circumference(perimeter) is {("2"*(length + width))}.")
-        # TODO ------->>>> Call the function for calculating circumference here
+        length = int(input("What is the length?"))
+        width = int(input("What is the width?"))
+        print(f"The circumference(perimeter) is {2*(length + width)}.")
+# TODO------->>>> Call the function for calculating circumference here
 
     if choice == "1":
           calculate_area()
