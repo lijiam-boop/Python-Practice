@@ -1,41 +1,45 @@
-print("Welcome to the quiz ")
+def welcome():
+    print("Welcome to the quiz ")
+score = 0
 # Question 1
-print("\n1. What is the capital of New Zealand?")
-print("1) Auckland")
-print("2) Wellington")
-print("3) Christchurch")
-print("4) Hamilton")
+print("\n1. What is the capital of Australia?")
+print("1) Melbourne")
+print("2) Canberra")
+print("3) Sydney")
+print("4) Perth ")
 
 while True:
     ans1 = input("Your answer (1-4): ").strip()
-    if ans1 in ["1", "2", "3", "4"]:
+    if ans1 == "2":
+        print("Correct!")
+        score += 1
         break
-    print("Invalid! Please enter 1-4 only.")
 
-if ans1 == "2":
-    print("Correct!")
-    score = score + 1
-else:
-    print("Wrong! The answer is 2.")
+    elif ans1 in ["1", "3", "4"]:
+        print("Wrong! Try again.")
+
+    else:
+        print("Please enter 1-4 only!")
 
 # Question 2
 print("\n2. Which animal is native to NZ?")
-print("1) Kiwi")
+print("1) Kiwi bird")
 print("2) Tiger")
 print("3) Elephant")
 print("4) Dog")
 
 while True:
     ans2 = input("Your answer (1-4): ").strip()
-    if ans2 in ["1", "2", "3", "4"]:
+    if ans2 == "1":
+        print("Correct!")
+        score += 1
         break
-    print("Invalid! Please enter 1-4 only.")
 
-if ans2 == "1":
-    print("Correct!")
-    score = score + 1
-else:
-    print("Wrong! The answer is 1.")
+    elif ans2 in ["2", "3", "4"]:
+        print("Wrong! Try again.")
+
+    else:
+        print("Please enter 1-4 only!")
 
 # Question 3
 print("\n3. What colour is a kiwi fruit inside?")
@@ -46,18 +50,19 @@ print("4) Black")
 
 while True:
     ans3 = input("Your answer (1-4): ").strip()
-    if ans3 in ["1", "2", "3", "4"]:
+    if ans3 == "2":
+        print("Correct!")
+        score += 1
         break
-    print("Invalid! Please enter 1-4 only.")
 
-if ans3 == "2":
-    print("Correct!")
-    score = score + 1
-else:
-    print("Wrong! The answer is 2.")
+    elif ans3 in ["1", "3", "4"]:
+        print("Wrong! Try again.")
+
+    else:
+        print("Please enter 1-4 only!")
 
 # Question 4
-print("\n6. How many days in a week?")
+print("\n4. How many days in a week?")
 print("1) 5")
 print("2) 7")
 print("3) 10")
@@ -93,5 +98,5 @@ while True:
     
 # Final Score
 print("\nQuiz finished!")
-print(f"Your final score: {score}/3")
+print(f"Your final score: {score}/5")
 print("Well done!")
