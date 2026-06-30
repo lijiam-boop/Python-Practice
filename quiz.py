@@ -1,5 +1,5 @@
 def welcome():
-    print("Welcome to the quiz ")
+    print("Welcome to the quiz！How much do you know about Oceania?")
 score = 0
 # Question 1
 print("\n1. What is the capital of Australia?")
@@ -62,36 +62,36 @@ while True:
         print("Please enter 1-4 only!")
 
 # Question 4
-print("\n4. How many days in a week?")
-print("1) 5")
-print("2) 7")
-print("3) 10")
-print("4) 30")
+print("\n4. Which country in Oceania do you like the most??")
+print("1) New Zealand")
+print("2) Australia")
+print("3) Fiji")
+print("4) other")
 
 while True:
     ans6 = input("Your answer (1-4): ").strip()
-    if ans6 == "2":
-        print("Correct!")
+    if ans6 == "1""2""3":
+        print("Well,it is perfect country")
         score += 1
         break
-    elif ans6 in ["1","3","4"]:
-        print("Wrong! Try again.")
+    elif ans6 in ["4"]:
+        print("So cool.")
     else:
         print("Please enter 1-4 only!")
  # Question 5
-print("\n5. What colour is the sun?")
-print("1) Yellow")
-print("2) Blue")
-print("3) Green")
-print("4) Black")
+print("\n5. How many countries are there in Oceania??")
+print("1) 16")
+print("2) 8")
+print("3) 12")
+print("4) 14")
 
 while True:
     ans5 = input("Your answer (1-4): ").strip()
-    if ans5 == "1":
+    if ans5 == "4":
         print("Correct!")
         score += 1
         break
-    elif ans5 in ["2","3","4"]:
+    elif ans5 in ["2","3","1"]:
         print("Wrong! Try again.")
     else:
         print("Please enter 1-4 only!")
